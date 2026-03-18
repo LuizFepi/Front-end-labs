@@ -10,6 +10,11 @@
     --color-border: #ccc;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 body {
     color:  #333333;
     font-family: var(--font-default);
