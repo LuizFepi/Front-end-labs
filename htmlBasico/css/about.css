@@ -34,11 +34,6 @@
     margin:  0 0 10px 10px;
 }
 
-html{
-
-    scroll-behavior: smooth;
-}
-
 body {
     color:  #333333;
     font-family: var(--font-default);
