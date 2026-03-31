@@ -3,8 +3,19 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
-
-    color: blueviolet;
+.titulo-principal {
+    color: rgb(12, 143, 18);
     font-style: italic;
+    font-size: 40px;
+}
+
+.font-titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.titulo-secundario {
+    color: rgb(12, 54, 143);
+    font-style: italic;
+    font-size: 30px;
 }
