@@ -1,110 +1,143 @@
 :root {
-    /*Paleta tipografica*/
     --font-default: "Funnel Sans", sans-serif;
     --font-title: "Delius", cursive;
     --font-title-weight: 300;
-    --font-size-small: 0.8rem
+    --font-size-small: 0.8rem;
 
-    /*Paleta de cores*/
     --color-primary: #333333;
     --color-background: #F2EDED;
     --color-border: #ccc;
     --color-base-footer: #7c7676;
 
-    /*Tamanho das Imagens*/
     --logo-width: 94px;
 
-    /*espaçamento*/
     --space-1: 8px;
     --space-2: 16px;
     --space-3: 32px;
 
-    /*border-radius*/
     --border-width: 1px;
     --border-radius: 4px;
 }
 
-#centro-distribuicao{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
+/* CONTAINER (novo) */
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 var(--space-2);
 }
 
-#rodape img {
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-}
-
-#familia-pelho{
-
-    float: right;
-    margin:  0 0 10px 10px;
-}
-
-body {
-    color:  #333333;
-    font-family: var(--font-default);
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
-}
-
-h1 {
-    font-family: var(--font-title);
+/* HEADER (novo componente) */
+.header {
     background-image: url(../img/sobre-background.jpg);
-    padding: 10px;
+    padding: var(--space-2) 0;
 }
 
-h2 {
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.header__logo {
+    width: var(--logo-width);
+}
+
+.header__title {
+    font-family: var(--font-title);
+}
+
+/* SECTION */
+.section {
+    margin-top: var(--space-3);
+}
+
+.section__title {
     font-family: var(--font-title);
     font-weight: var(--font-title-weight);
     border-bottom: 2px groove var(--color-primary);
-    margin-top: 30px;
+    margin-bottom: var(--space-2);
 }
 
-figure{
+/* TEXTO */
+.text {
+    text-align: justify;
+    text-indent: 15px;
+    margin-bottom: var(--space-2);
+}
+
+/* CARD (reutiliza figure) */
+.card {
     background-color: var(--color-background);
     border: 1px solid var(--color-border);
-    text-align: center;
     padding: 15px;
-    margin: 30px;
+    margin: 30px 0;
 }
 
-figcaption {
+.card--center {
+    text-align: center;
+}
+
+.card__image {
+    max-width: 100%;
+}
+
+.card__caption {
     font-family: var(--font-title);
     font-style: italic;
     margin-top: 10px;
 }
 
-p {
-    padding:  0 45px;
-    text-indent: 15px;
-    text-align: justify;
+/* MEDIA (imagem + texto) */
+.media {
+    display: flex;
+    gap: var(--space-2);
+    align-items: flex-start;
 }
 
-/*Componente rodape*/
+.media .card {
+    max-width: 300px;
+}
 
-.footer{    
+/* LISTA */
+.list {
+    padding-left: 20px;
+}
+
+.list__item {
+    margin-bottom: var(--space-1);
+}
+
+/* FOOTER (mantido) */
+.footer {    
     color: var(--color-base-footer);
     margin: var(--space-3) 0;
     padding: var(--space-3) 0;
     border-top: var(--border-width) solid var(--color-border);
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     align-items: center;
     gap: var(--space-2);
     justify-content: center;
 }
 
-.footer__logo{
-
+.footer__logo {
     width: var(--logo-width);
 }
 
-.footer__text{
-
+.footer__text {
     font-size: var(--font-size-small);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .media {
+        flex-direction: column;
+    }
+
+    .header__container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
