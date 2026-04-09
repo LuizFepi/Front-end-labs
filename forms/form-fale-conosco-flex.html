@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form-fale-conosco-flex.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Fale Conosco</h1>
+
+            <p>
+                Estamos aqui para ajudar! Preencha o formalário abaixo e entraremos em contato com você o mais breve possível.
+            </p>
+        </header>
+
+        <form action="Fale-Conosco" class="form-fale-conosco">
+            <div class="form-item">
+                <label for="Primeiro Nome">Primeiro Nome</label>
+                <input type="text" name="Primeiro Nome" id="" placeholder="Seu nome..." maxlength="40" minlength="2">
+            </div>
+            <div class="form-item">
+                <label for="Último Nome">Último Nome</label>
+                <input type="text" name="Último Nome" id="" placeholder="Seu sobrenome..." maxlength="60" minlength="2">
+            </div>
+            <div class="form-item">
+                <label for="E-mail">E-mail</label>
+                <input type="email" name="E-mail" id="" placeholder="Seu e-mail." maxlength="30">
+            </div>
+            <div class="form-item">
+                <label for="Pais">Pais</label>
+                <select name="Pais" id="">
+                    <option value="Selecione">Selecione</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Mexico">Mexico</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <label for="Assunto">Assunto</label>
+                <textarea cols="20" rows="2" name="Assunto" id="" placeholder="Escreva aqui..."></textarea>
+            </div>
+            <div class="form-button">
+                <input type="button" value="Limpar" id="limpar-button">
+                <input type="button" value="Enviar" id="enviar-button">
+            </div>
+        </form>
+        <p>Em caso de duvida entre em contato 📞</p>
+
+    </main>
+    
+</body>
+</html>
