@@ -6,6 +6,7 @@
 
 .header{
     margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 .form-fale-conosco{
@@ -35,18 +36,22 @@
 }
 
 #limpar-button{
+    border: none;
     border-radius: 3px;
     width: 80px;
     height: 30px;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 #enviar-button{
+    border: none;
     border-radius: 3px;
     margin-left: 10px;
     height: 30px;
     width: 80px;
     background-color: #53009e;
+    cursor: pointer;
 }
 
 #input_first_name_form{
@@ -65,11 +70,14 @@
 }
 
 #select_form{
+    color: rgb(114, 114, 114);
     margin-left: 145px;
     height: 30px;
 }
 
 #textarea_form{
+    resize: vertical;
+    min-height: 40px;
     margin-left: 105px;
     height: 30px;
 }
