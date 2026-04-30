@@ -1,3 +1,64 @@
-#form-item{
+body{
+    background-color: rgb(236, 231, 216);
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "form-online form-online";
+    grid-template-columns: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container div.header{
+    grid-area: header;
+}
+
+.container div.form-online{
+    grid-area: form-online;
+}
+
+.container div.personal-data{
+    grid-area: personal-data;
+}
+
+.container div.adress{
+    grid-area: adress;
+}
+
+.container div.login{
+    grid-area: login;
+}
+
+.container div.buttons{
+    margin-top: 20px;
+    grid-area: buttons;
+}
+
+.form-item{
     display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+
+.confirm-button{
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: blue;
+    height: 30px;
+    width: 49%;
+}
+
+.cancel-button{
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color: orangered;
+    height: 30px;
+    width: 49%;
 }
