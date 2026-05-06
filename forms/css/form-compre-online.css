@@ -20,23 +20,6 @@ body{
     grid-area: form-online;
 }
 
-.container div.personal-data{
-    grid-area: personal-data;
-}
-
-.container div.adress{
-    grid-area: adress;
-}
-
-.container div.login{
-    grid-area: login;
-}
-
-.container div.buttons{
-    margin-top: 20px;
-    grid-area: buttons;
-}
-
 .form-item{
     display: flex;
     flex-direction: column;
@@ -60,5 +43,5 @@ body{
     color: white;
     background-color: orangered;
     height: 30px;
-    width: 49%;
+    width: 50%;
 }

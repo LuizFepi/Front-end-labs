@@ -1,0 +1,44 @@
+body{
+
+    background-color: rgb(227, 238, 238);
+}
+
+li{
+    text-align: left;
+    margin-top: 10px;
+}
+
+h1{
+    color: rgb(0, 183, 255);
+}
+
+.container{
+    display: grid;
+    grid-template-areas:
+    "card card";
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.card{
+    display: grid;
+    border-radius: 3%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.select-plan{
+    border-radius: 6px;
+    width: 70%;
+    height: 40px;
+    color: rgb(0, 183, 255);
+    background-color: white;
+    border-color: rgb(0, 183, 255);
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
